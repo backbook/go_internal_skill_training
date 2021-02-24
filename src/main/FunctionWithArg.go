@@ -5,10 +5,18 @@ import "fmt"
 func main() {
 	argFunc, i, i2 := multiArgFunc()
 	fmt.Println(argFunc, i, i2)
+
+	i3 := func07()
+	fmt.Println(i3)
+	fmt.Printf("%T", i3)
 }
 
 func func01() int {
 	return 4
+}
+
+func func07() interface{} {
+	return 10
 }
 
 func func03() (res int) {

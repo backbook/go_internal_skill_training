@@ -10,9 +10,9 @@ type Person struct {
 
 type Student struct {
 	Person  //只有类型，没有名字，匿名字段，相当于继承了Person的 ,匿名字段
-	name    string
-	score   int
-	address string
+	Name    string
+	Score   int
+	Address string
 }
 
 func (student *Student) SetName(name string) {
