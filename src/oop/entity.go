@@ -3,9 +3,9 @@ package oop
 import "fmt"
 
 type Person struct {
-	name string
-	age  int
-	sex  byte
+	Name string
+	Age  int
+	Sex  byte
 }
 
 type Student struct {
@@ -16,11 +16,19 @@ type Student struct {
 }
 
 func (student *Student) SetName(name string) {
-	student.name = name
+	student.Name = name
 }
 
 func (student *Student) GetName() string {
-	return student.name
+	return student.Name
+}
+
+func (student *Student) PrintInfoT() {
+	fmt.Println("this is student", student)
+}
+
+func (person *Person) PrintInfo() {
+	fmt.Println("this is person", person)
 }
 
 func Amonymous() {

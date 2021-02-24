@@ -19,13 +19,20 @@ type teach struct {
 func main() {
 
 	var s1 oop.Student = oop.Student{}
-	s1.SetName("张三")
+	s1.Address = "哈尔滨"
+	s1.Name = "张三"
+	s1.Score = 100
+	s1.Sex = 2
+	s1.Age = 19
+
 	//%+v 显示更加详细的
 	name := s1.GetName()
 	fmt.Println(name)
 	//匿名结构体
 	oop.Amonymous()
 	fmt.Println()
+
+	s1.PrintInfo()
 
 	teachObj := &teach{Education: "college", human: &human{Name: "张三", Age: 18}}
 	fmt.Printf("%v\n", teachObj)
